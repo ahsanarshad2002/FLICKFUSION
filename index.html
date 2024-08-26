@@ -1,0 +1,1190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link  rel="shortcut icon" type="YouTube-icon" href="logo=.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>FLICKFUSION WatchOnlineMoives...</title>
+  <style>
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      /* 10 images per row */
+      gap: 10px;
+      /* Space between images */
+      padding: 10px;
+    }
+
+    .grid-image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar-start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a style="flex-basis: 20%;" class="navbar-brand" href="#">
+        <img class="logo" style="width: 40%; margin-left: 4%;" src="logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">BOLLYWOOD</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              HINDI DUBBED
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Hindi HD</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              NETFLIX
+            </a>
+            <ul id="myDropDown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Seasons</a></li>
+              <li><a class="dropdown-item" href="#">Web Series</a></li>
+              <li><a class="dropdown-item" href="#">Moives</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">PUNJABI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">CONTACT</a>
+          </li>
+        </ul>
+        <form style="width: 40%;" class="d-flex">
+          <div class="input-group">
+            <input id="searchInput"  class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <span class="input-group-text">
+              <i class="bi bi-search"></i>
+            </span>
+            <div id="searchResults"></div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+    
+
+  <!-- Navbar-end -->
+  <!-- buttons-start-->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarAncolContent" aria-controls="navbarAncolContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarAncolContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Anchor tags from A to Z -->
+          <li class="nav-item"><a class="nav-link" href="#">#</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">A</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">B</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">C</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">D</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">E</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">F</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">G</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">H</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">I</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">J</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">K</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">L</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">M</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">N</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">O</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">P</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Q</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">R</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">S</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">T</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">U</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">V</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">W</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">X</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Y</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Z</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+
+  <section class="top">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="image-grid">
+            <img src="1.jpg" class="grid-image" alt="Image 1">
+            <img src="2.jpg" class="grid-image" alt="Image 2">
+            <img src="3.jpg" class="grid-image" alt="Image 3">
+            <img src="4.jpg" class="grid-image" alt="Image 4">
+            <img src="5.jpg" class="grid-image" alt="Image 5">
+            <img src="6.jpg" class="grid-image" alt="Image 6">
+            <img src="7.jpg" class="grid-image" alt="Image 7">
+            <img src="8.jpg" class="grid-image" alt="Image 8">
+            <img src="9.jpg" class="grid-image" alt="Image 9">
+            <img src="10.jpg" class="grid-image" alt="Image 10">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="image-grid">
+            <img src="11.jpg" class="grid-image" alt="Image 11">
+            <img src="12.jpg" class="grid-image" alt="Image 12">
+            <img src="13.jpg" class="grid-image" alt="Image 13">
+            <img src="14.jpg" class="grid-image" alt="Image 14">
+            <img src="15.jpg" class="grid-image" alt="Image 15">
+            <img src="16.jpg" class="grid-image" alt="Image 16">
+            <img src="17.jpg" class="grid-image" alt="Image 17">
+            <img src="18.jpg" class="grid-image" alt="Image 18">
+            <img src="19.jpg" class="grid-image" alt="Image 19">
+            <img src="20.jpg" class="grid-image" alt="Image 20">
+          </div>
+        </div>
+        <!-- Continue adding more carousel items as needed -->
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <div class="card">
+    <section class="two">
+
+      <h2 style="color: white; font-size: 3vmin; margin-top: 2%; margin-left: 3%; "> For Demo Contact us</h2>
+      <a style="margin-left: 2%; margin-top: -5%; " href="#">
+        <address style="margin-top: -12%; margin-left: 3%;">support@FLICKFUSION.com</address>
+      </a>
+      <h2 class="h2">Genres – FLICKFUSION</h2>
+      <div class="div">
+        <div class="row">
+          <div class="col-sm-1">
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div class="col-sm-4">
+            Action
+          </div>
+          <div class="col-sm-4">
+            1,988
+          </div>
+        </div>
+      </div>
+      <div class="div">
+        <div class="row">
+          <div class="col-sm-1">
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div class="col-sm-5">
+            Adventure
+          </div>
+          <div class="col-sm-4">
+            188
+          </div>
+        </div>
+      </div>
+      <div class="div">
+        <div class="row">
+          <div class="col-sm-1">
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div class="col-sm-5">
+            Romantic
+          </div>
+          <div class="col-sm-4">
+            988
+          </div>
+        </div>
+      </div>
+      <div class="div">
+        <div class="row">
+          <div class="col-sm-1">
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div class="col-sm-5">
+            Animation
+          </div>
+          <div class="col-sm-4">
+            2,143
+          </div>
+        </div>
+      </div>
+      <div class="div">
+        <div class="row">
+          <div class="col-sm-1">
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div class="col-sm-5">
+            Biography
+          </div>
+          <div class="col-sm-4">
+            1,288
+          </div>
+        </div>
+      </div>
+      <div class="div">
+        <div class="row">
+          <div class="col-sm-1">
+            <i class="fa-regular fa-circle"></i>
+          </div>
+          <div class="col-sm-5">
+            Crime
+          </div>
+          <div class="col-sm-4">
+            288
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <section class="third">
+      <h2 style="color: gainsboro; font-size: 3vmin; margin-top: 5%; margin-left: 3%; ">Release Year – FLICKFUSION <i
+          class="fa-solid fa-caret-down"></i> </h2>
+      <div class="row  ">
+        <div class="col-sm-4 year"><button>2024</button></div>
+        <div class="col-sm-4 year"><button>2023</button></div>
+        <div class="col-sm-4 year"><button>2022</button></div>
+        <div class="col-sm-4 year"><button>2021</button></div>
+        <div class="col-sm-4 year"><button>2020</button></div>
+        <div class="col-sm-4 year"><button>2019</button></div>
+        <div class="col-sm-4 year"><button>2018</button></div>
+        <div class="col-sm-4 year"><button>2017</button></div>
+        <div class="col-sm-4 year"><button>2016</button></div>
+        <div class="col-sm-4 year"><button>2015</button></div>
+        <div class="col-sm-4 year"><button>2014</button></div>
+        <div class="col-sm-4 year"><button>2013</button></div>
+        <div class="col-sm-4 year"><button>2012</button></div>
+        <div class="col-sm-4 year"><button>2013</button></div>
+        <div class="col-sm-4 year"><button>2011</button></div>
+        <div class="col-sm-4 year"><button>2010</button></div>
+        <div class="col-sm-4 year"><button>2009</button></div>
+        <div class="col-sm-4 year"><button>2008</button></div>
+        <div class="col-sm-4 year"><button>2007</button></div>
+        <div class="col-sm-4 year"><button>2006</button></div>
+
+      </div>
+    </section>
+
+    <section class="fourth">
+      <h2 style="margin-left: 3%; font-size: 3vmin; color: white; ">Popular Movies – FLICKFUSION <i
+          class="fa-solid fa-fire"></i></h2>
+      <div class="row ">
+        <div class="col-sm-3 movie-card">
+          <img src="s1.jpg" alt="Movie Thumbnail" class="movie-thumbnail">
+          <div class="movie-details">
+            <h4 class="movie-title">Lucifer (2016) Season 1 Hindi....</h4>
+            <div class="movie-meta">
+              <i class="fa-solid fa-star"></i>
+              <h5 style="color: white;" class="movie-rating">(9)</h5>
+              <h6 class="movie-year">2016</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 movie-card">
+          <img src="s2.jpg" alt="Movie Thumbnail" class="movie-thumbnail">
+          <div class="movie-details">
+            <h4 class="movie-title">Peaky Blinders (2013) Season 1 Hindi....</h4>
+            <div class="movie-meta">
+              <i class="fa-solid fa-star"></i>
+              <h5 style="color: white;" class="movie-rating">(9.0)</h5>
+              <h6 class="movie-year">2013</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 movie-card">
+          <img src="s3.jpg" alt="Movie Thumbnail" class="movie-thumbnail">
+          <div class="movie-details">
+            <h4 class="movie-title">Pathaan (2023)‧Action/Thriller Hindi....</h4>
+            <div class="movie-meta">
+              <i class="fa-solid fa-star"></i>
+              <h5 style="color: white;" class="movie-rating">(8.3)</h5>
+              <h6 class="movie-year">2023</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 movie-card">
+          <img src="s4.jpg" alt="Movie Thumbnail" class="movie-thumbnail">
+          <div class="movie-details">
+            <h4 class="movie-title">Salaar: Part 1 – Ceasefire</h4>
+            <div class="movie-meta">
+              <i class="fa-solid fa-star"></i>
+              <h5 style="color: white;" class="movie-rating">(10)</h5>
+              <h6 class="movie-year">2023</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 movie-card">
+          <img src="s5.jpg" alt="Movie Thumbnail" class="movie-thumbnail">
+          <div class="movie-details">
+            <h4 class="movie-title">Pirates of the Caribbean 5</h4>
+            <div class="movie-meta">
+              <i class="fa-solid fa-star"></i>
+              <h5 style="color: white;" class="movie-rating">(8.7)</h5>
+              <h6 class="movie-year">2003</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 movie-card">
+          <img src="s6.jpg" alt="Movie Thumbnail" class="movie-thumbnail">
+          <div class="movie-details">
+            <h4 class="movie-title">Wednesday Season 1 Hindi....</h4>
+            <div class="movie-meta">
+              <i class="fa-solid fa-star"></i>
+              <h5 style="color: white;" class="movie-rating">(8.2)</h5>
+              <h6 class="movie-year">2023</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 movie-card">
+          <img src="s7.jpg" alt="Movie Thumbnail" class="movie-thumbnail">
+          <div class="movie-details">
+            <h4 class="movie-title">Money Heist Season 4 Hindi....</h4>
+            <div class="movie-meta">
+              <i class="fa-solid fa-star"></i>
+              <h5 style="color: white;" class="movie-rating">(10)</h5>
+              <h6 class="movie-year">2017</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 movie-card">
+          <img src="s8.jpg" alt="Movie Thumbnail" class="movie-thumbnail">
+          <div class="movie-details">
+            <h4 class="movie-title">Free Guy Hindi....</h4>
+            <div class="movie-meta">
+              <i class="fa-solid fa-star"></i>
+              <h5 style="color: white;" class="movie-rating">(7.1)</h5>
+              <h6 class="movie-year">2021</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 movie-card">
+          <img src="s9.jpg" alt="Movie Thumbnail" class="movie-thumbnail">
+          <div class="movie-details">
+            <h4 class="movie-title">Baywatch (2017) Comedy/Action Hindi....</h4>
+            <div class="movie-meta">
+              <i class="fa-solid fa-star"></i>
+              <h5 style="color: white;" class="movie-rating">(9.1)</h5>
+              <h6 class="movie-year">2017</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 movie-card">
+          <img src="s10.jpg" alt="Movie Thumbnail" class="movie-thumbnail">
+          <div class="movie-details">
+            <h4 class="movie-title">John Wick: Chapter 4 Hindi....</h4>
+            <div class="movie-meta">
+              <i class="fa-solid fa-star"></i>
+              <h5 style="color: white;" class="movie-rating">(9.7)</h5>
+              <h6 class="movie-year">2023</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-3 movie-card">
+          <img src="s11.jpg" alt="Movie Thumbnail" class="movie-thumbnail">
+          <div class="movie-details">
+            <h4 class="movie-title">Deadpool 2 (2018)‧Action/Comedy Hindi....</h4>
+            <div class="movie-meta">
+              <i class="fa-solid fa-star"></i>
+              <h5 style="color: white;" class="movie-rating">(7.3)</h5>
+              <h6 class="movie-year">2018</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="one" >
+    <h1 class="h1">FLICKFUSION- Watch and Download Movies |<a style="text-decoration: none;" href="#"> Join Our Telegram Link</a></h1>
+    <form style="width: 60%; margin-left: 2%; margin-top: 2%;  " class= "d-flex">
+      <div class="input-group">
+        <input class="form-control" type="search" placeholder="Search Movie" aria-label="Search">
+        <span class="input-group-text">
+          <i class="bi bi-search"></i>
+        </span>
+      </div>
+    </form>
+  </section>
+  <section class="two">
+    <div class="to">
+      <h2 style="color: white; margin-left: 2%; border-left: 5px solid red; padding-left: 2%;" >Featured Movies - FLICKFUSION</h2>
+    </div>
+    <div class="row roo">
+      <div class="col-sm-2 datt">
+        <img src="m1.jpg" alt="Rampage">
+        <div class="overlay">
+          <h2>Rampage</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: John Doe</p>
+            <p>Producer: Jane Smith</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2018</span>
+        <i class="fa-solid fa-star"></i> <sup>8.5</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m2.jpg" alt="The Jungle Book">
+        <div class="overlay">
+          <h2>The Jungle Book</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: David Yates</p>
+            <p>Producer: Mark Johnson</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2016</span>
+        <i class="fa-solid fa-star"></i> <sup>6.5</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m3.jpg" alt="Alita Battle Angel">
+        <div class="overlay">
+          <h2>Alita Battle Angel</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Robert Rodriguez</p>
+            <p>Producer: James Cameron</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2019</span>
+        <i class="fa-solid fa-star"></i> <sup>7.0</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m4.jpg" alt="Palmer">
+        <div class="overlay">
+          <h2>Palmer</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Fisher Stevens</p>
+            <p>Producer: Sidney Kimmel</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2021</span>
+        <i class="fa-solid fa-star"></i> <sup>7.1</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m5.jpg" alt="Jailer">
+        <div class="overlay">
+          <h2>Jailer</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Nelson Dilipkumar</p>
+            <p>Producer: Kalanithi Maran</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2023</span>
+        <i class="fa-solid fa-star"></i> <sup>5.9</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m6.jpg" alt="Jumanji Next Level">
+        <div class="overlay">
+          <h2>Jumanji Next Level</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Jake Kasdan</p>
+            <p>Producer: Matt Tolmach</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2019</span>
+        <i class="fa-solid fa-star"></i> <sup>9.7</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m7.jpg" alt="Vikings S6">
+        <div class="overlay">
+          <h2>Vikings S6</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Ciarán Donnelly</p>
+            <p>Producer: Michael Hirst</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2020</span>
+        <i class="fa-solid fa-star"></i> <sup>9.0</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m8.jpg" alt="Avengers: Endgame">
+        <div class="overlay">
+          <h2>Avengers: Endgame</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Anthony Russo</p>
+            <p>Producer: Kevin Feige</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2019</span>
+        <i class="fa-solid fa-star"></i> <sup>8.4</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m9.jpg" alt="Dunki">
+        <div class="overlay">
+          <h2>Dunki</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Rajkumar Hirani</p>
+            <p>Producer: Gauri Khan</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2023</span>
+        <i class="fa-solid fa-star"></i> <sup>6.4</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m10.jpg" alt="83">
+        <div class="overlay">
+          <h2>83</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Kabir Khan</p>
+            <p>Producer: Deepika Padukone</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2023</span>
+        <i class="fa-solid fa-star"></i> <sup>7.4</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m11.jpg" alt="LEO">
+        <div class="overlay">
+          <h2>LEO</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Lokesh Kanagaraj</p>
+            <p>Producer: S. S. Lalit Kumar</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2023</span>
+        <i class="fa-solid fa-star"></i> <sup>7.2</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m12.jpg" alt="Gundala">
+        <div class="overlay">
+          <h2>Gundala</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Joko Anwar</p>
+            <p>Producer: Riza Umam</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2019</span>
+        <i class="fa-solid fa-star"></i> <sup>6.1</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m13.jpg" alt="The Gray Man">
+        <div class="overlay">
+          <h2>The Gray Man</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Anthony Russo</p>
+            <p>Producer: Joe Russo</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2019</span>
+        <i class="fa-solid fa-star"></i> <sup>6.5</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m14.jpg" alt="Baby Driver">
+        <div class="overlay">
+          <h2>Baby Driver</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Edgar Wright</p>
+            <p>Producer: Nira Park</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2017</span>
+        <i class="fa-solid fa-star"></i> <sup>7.5</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m15.jpg" alt="The Rock x Siri">
+        <div class="overlay">
+          <h2>The Rock x Siri</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Chris McKay</p>
+            <p>Producer: Dwayne Johnson</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2017</span>
+        <i class="fa-solid fa-star"></i> <sup>5.0</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m16.jpg" alt="Kraven the Hunter">
+        <div class="overlay">
+          <h2>Kraven the Hunter</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: J.C. Chandor</p>
+            <p>Producer: Avi Arad</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2024</span>
+        <i class="fa-solid fa-star"></i> <sup>10</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m17.jpg" alt="The Meg 2">
+        <div class="overlay">
+          <h2>The Meg 2</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Ben Wheatley</p>
+            <p>Producer: Lorenzo di Bonaventura</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2023</span>
+        <i class="fa-solid fa-star"></i> <sup>5.0</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m18.jpg" alt="Gods of Egypt">
+        <div class="overlay">
+          <h2>Gods of Egypt</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Alex Proyas</p>
+            <p>Producer: Basil Iwanyk</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2016</span>
+        <i class="fa-solid fa-star"></i> <sup>5.4</sup>
+      </div>
+    
+    <div class="row roo">
+      <div class="col-sm-2 datt">
+        <img src="m1.jpg" alt="Rampage">
+        <div class="overlay">
+          <h2>Rampage</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: John Doe</p>
+            <p>Producer: Jane Smith</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2018</span>
+        <i class="fa-solid fa-star"></i> <sup>8.5</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m2.jpg" alt="The Jungle Book">
+        <div class="overlay">
+          <h2>The Jungle Book</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: David Yates</p>
+            <p>Producer: Mark Johnson</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2016</span>
+        <i class="fa-solid fa-star"></i> <sup>6.5</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m3.jpg" alt="Alita Battle Angel">
+        <div class="overlay">
+          <h2>Alita Battle Angel</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Robert Rodriguez</p>
+            <p>Producer: James Cameron</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2019</span>
+        <i class="fa-solid fa-star"></i> <sup>7.0</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m4.jpg" alt="Palmer">
+        <div class="overlay">
+          <h2>Palmer</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Fisher Stevens</p>
+            <p>Producer: Sidney Kimmel</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2021</span>
+        <i class="fa-solid fa-star"></i> <sup>7.1</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m5.jpg" alt="Jailer">
+        <div class="overlay">
+          <h2>Jailer</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Nelson Dilipkumar</p>
+            <p>Producer: Kalanithi Maran</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2023</span>
+        <i class="fa-solid fa-star"></i> <sup>5.9</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m6.jpg" alt="Jumanji Next Level">
+        <div class="overlay">
+          <h2>Jumanji Next Level</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Jake Kasdan</p>
+            <p>Producer: Matt Tolmach</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2019</span>
+        <i class="fa-solid fa-star"></i> <sup>9.7</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m7.jpg" alt="Vikings S6">
+        <div class="overlay">
+          <h2>Vikings S6</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Ciarán Donnelly</p>
+            <p>Producer: Michael Hirst</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2020</span>
+        <i class="fa-solid fa-star"></i> <sup>9.0</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m8.jpg" alt="Avengers: Endgame">
+        <div class="overlay">
+          <h2>Avengers: Endgame</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Anthony Russo</p>
+            <p>Producer: Kevin Feige</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2019</span>
+        <i class="fa-solid fa-star"></i> <sup>8.4</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m9.jpg" alt="Dunki">
+        <div class="overlay">
+          <h2>Dunki</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Rajkumar Hirani</p>
+            <p>Producer: Gauri Khan</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2023</span>
+        <i class="fa-solid fa-star"></i> <sup>6.4</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m10.jpg" alt="83">
+        <div class="overlay">
+          <h2>83</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Kabir Khan</p>
+            <p>Producer: Deepika Padukone</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2023</span>
+        <i class="fa-solid fa-star"></i> <sup>7.4</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m11.jpg" alt="LEO">
+        <div class="overlay">
+          <h2>LEO</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Lokesh Kanagaraj</p>
+            <p>Producer: S. S. Lalit Kumar</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2023</span>
+        <i class="fa-solid fa-star"></i> <sup>7.2</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m12.jpg" alt="Gundala">
+        <div class="overlay">
+          <h2>Gundala</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Joko Anwar</p>
+            <p>Producer: Riza Umam</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2019</span>
+        <i class="fa-solid fa-star"></i> <sup>6.1</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m13.jpg" alt="The Gray Man">
+        <div class="overlay">
+          <h2>The Gray Man</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Anthony Russo</p>
+            <p>Producer: Joe Russo</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2019</span>
+        <i class="fa-solid fa-star"></i> <sup>6.5</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m14.jpg" alt="Baby Driver">
+        <div class="overlay">
+          <h2>Baby Driver</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Edgar Wright</p>
+            <p>Producer: Nira Park</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2017</span>
+        <i class="fa-solid fa-star"></i> <sup>7.5</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m15.jpg" alt="The Rock x Siri">
+        <div class="overlay">
+          <h2>The Rock x Siri</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Chris McKay</p>
+            <p>Producer: Dwayne Johnson</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2017</span>
+        <i class="fa-solid fa-star"></i> <sup>5.0</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m16.jpg" alt="Kraven the Hunter">
+        <div class="overlay">
+          <h2>Kraven the Hunter</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: J.C. Chandor</p>
+            <p>Producer: Avi Arad</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2024</span>
+        <i class="fa-solid fa-star"></i> <sup>10</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m17.jpg" alt="The Meg 2">
+        <div class="overlay">
+          <h2>The Meg 2</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Ben Wheatley</p>
+            <p>Producer: Lorenzo di Bonaventura</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2023</span>
+        <i class="fa-solid fa-star"></i> <sup>5.0</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m18.jpg" alt="Gods of Egypt">
+        <div class="overlay">
+          <h2>Gods of Egypt</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Alex Proyas</p>
+            <p>Producer: Basil Iwanyk</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2016</span>
+        <i class="fa-solid fa-star"></i> <sup>5.4</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m13.jpg" alt="The Gray Man">
+        <div class="overlay">
+          <h2>The Gray Man</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Anthony Russo</p>
+            <p>Producer: Joe Russo</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2019</span>
+        <i class="fa-solid fa-star"></i> <sup>6.5</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m14.jpg" alt="Baby Driver">
+        <div class="overlay">
+          <h2>Baby Driver</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Edgar Wright</p>
+            <p>Producer: Nira Park</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2017</span>
+        <i class="fa-solid fa-star"></i> <sup>7.5</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m15.jpg" alt="The Rock x Siri">
+        <div class="overlay">
+          <h2>The Rock x Siri</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Chris McKay</p>
+            <p>Producer: Dwayne Johnson</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2017</span>
+        <i class="fa-solid fa-star"></i> <sup>5.0</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m16.jpg" alt="Kraven the Hunter">
+        <div class="overlay">
+          <h2>Kraven the Hunter</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: J.C. Chandor</p>
+            <p>Producer: Avi Arad</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2024</span>
+        <i class="fa-solid fa-star"></i> <sup>10</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m17.jpg" alt="The Meg 2">
+        <div class="overlay">
+          <h2>The Meg 2</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Ben Wheatley</p>
+            <p>Producer: Lorenzo di Bonaventura</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2023</span>
+        <i class="fa-solid fa-star"></i> <sup>5.0</sup>
+      </div>
+      <div class="col-sm-2 datt">
+        <img src="m18.jpg" alt="Gods of Egypt">
+        <div class="overlay">
+          <h2>Gods of Egypt</h2>
+          <div class="circle-pic">
+            <img src="director.jpg" alt="Director">
+            <img src="producer.jpg" alt="Producer">
+          </div>
+          <div class="names">
+            <p>Director: Alex Proyas</p>
+            <p>Producer: Basil Iwanyk</p>
+          </div>
+        </div>
+        <button class="fea">Featured</button>
+        <span>2016</span>
+        <i class="fa-solid fa-star"></i> <sup>5.4</sup>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+  
+</body>
+
+</html>
